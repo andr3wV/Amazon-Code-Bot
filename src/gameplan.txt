@@ -7,6 +7,8 @@ https://github.com/cacheflow/youtube-video-to-frames
 #3 Find all the frames with text
 https://github.com/VR51/Batch-Image-Text-Extractor
 
+#4 Combine text into one document
+
 #4 Find the Amazon codes in the text 
 Easy to do yourself
 

@@ -14,10 +14,10 @@ const rl = readline.createInterface({
 	output: process.stdout
 })
 
-let defaultVideoOptions = {videoName: 'video', fps: 1, imgFileName: "img", downloadLocation: path.resolve(__dirname)}
+let defaultVideoOptions = {videoName: 'video', fps: 0.5, imgFileName: "img", downloadLocation: path.resolve(__dirname)}
 
 const setOptions = (options) => {
-  options.fps = options.fps < 1 ? 1 : options.fps
+  options.fps = options.fps;
   defaultVideoOptions = Object.assign(defaultVideoOptions, options)
 }
 
@@ -41,7 +41,7 @@ const checkThatFfmpegIsInstalled = () => {
 }
 
 const ensureDirExists = () => {
-  let path = getOptions().downloadLocation
+  let path = getOptions().downloadLocation;
   return fsAccessAsync(path, fs.constants.R_OK | fs.constants.W_OK)
 }
 
@@ -140,6 +140,7 @@ module.exports = (videoUrl, options = {}) => {
     setOptions(options)
     if(options.downloadLocation !== path.resolve(__dirname)) {
       ensureDirExists().then(res => checkThatFfmpegIsInstalled()).catch(err => changeDownloadLocationToCwd())
+    
     }
   }
   else {
