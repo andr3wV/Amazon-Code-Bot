@@ -1,0 +1,16 @@
+#1 When video is uploaded, grab URL of that video
+https://github.com/DrKain/scrape-youtube 
+
+#2 Download all the frames from that video 
+https://github.com/cacheflow/youtube-video-to-frames
+
+#3 Find all the frames with text
+https://github.com/VR51/Batch-Image-Text-Extractor
+
+#4 Find the Amazon codes in the text 
+Easy to do yourself
+
+#5 Upload the codes to Amazon.com account
+Probably learn Amazon API and do yourself
+
+

@@ -1,10 +1,9 @@
-const config = require('./config');
-// const frames = require('youtube-video-to-frames');
-const frames = require('./YTtoFrames');
+const config = require('./src/models/config');
+const frames = require('./src/YTtoFrames');
 
 
 for(var i=0; i<1;i++){
-var url = require('./urlFetcher');
+var url = require('./src/urlFetcher');
 
 
 //everything MUST be done within the setTimeout() because I suck at async :(
@@ -17,7 +16,7 @@ setTimeout(function(){
 		else{
 		//if the url has changed (i.e. new video uploaded), go to step #2
 		console.log("New Video Uploaded!");
-		let options = {videoName: 'video', fps: 1, imgFileName: "img", downloadLocation: './images'}
+		let options = {videoName: 'video', fps: 1, imgFileName: "img", downloadLocation: './src/models/images'}
 		frames(config.newVideoURL, options)
 		return;
 		}
@@ -27,3 +26,5 @@ setTimeout(function(){
 },2000);
 
 }
+
+//to delete batch of images: find . -type f -name "img*" -print -delete
