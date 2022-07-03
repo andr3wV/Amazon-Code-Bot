@@ -146,19 +146,6 @@ title="Batch Image Text Extractor"
 		exit 1
 	fi
 
-	
-###
-#
-# Process the Image Files
-#
-###
-
-echo "All image files with extension $inputFormat in the current directory will be processed."
-echo 'Tip: Use Batch PDF Image Extractor to extract images from PDF files. See github.com/vr51'
-echo "Press any key to continue."
-echo 'Press Ctrl+C to cancel.'
-read something
-
 ###
 #
 # Process the PDF Files
