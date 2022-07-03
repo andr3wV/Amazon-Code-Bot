@@ -10,7 +10,7 @@ setInterval(function(){
 				console.log("No New Upload");
 			}
 			else{	
-				//if the url has changed (i.e. new video uploaded), go to step #2
+				//if the url has changed (i.e. new video uploaded), downloads the frames in that video
 				console.log("New Video Uploaded!");
 				let options = {videoName: 'video', fps: 1, imgFileName: "img", downloadLocation: './src/models/images'};
 				frames(config.newVideoURL, options)
@@ -19,6 +19,7 @@ setInterval(function(){
 	},2000);
 
 },5000);
+
 /*
 to delete batch of images: 
 find . -type f -name "img*" -print -delete && rm video.mp4

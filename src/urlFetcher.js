@@ -1,20 +1,17 @@
 const youtube = require('scrape-youtube');
 const config = require('./models/config');
 
-//var URL = "";
-
 //gets the url and sends it to config
 youtube.search('ksi try not to laugh', { type: 'playlist' }).then((results) => {
-    // grabs KSI TNTL playlist, the first video link
+    //sets a global var to the first link of the first video of the first playlist from search
 	config.newVideoURL = results.playlists[0].videos[0].link;
 
 })
-setTimeout(
 
+//compares newest video to the last video I manually have seen -- if it changed then we know it's a new upload!
+setTimeout(
 	function(){ 
-		//console.log(URL);
-		//config.newVideoURL = url
-		if(config.newVideoURL !== "No Videos Found"){
+		if(config.newVideoURL !== "https://youtu.be/WxHRKCgCtDM"){
 			config.actionStatus = true;
 		}
 	}, 1000)
