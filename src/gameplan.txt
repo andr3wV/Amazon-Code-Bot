@@ -15,4 +15,7 @@ Easy to do yourself
 #6 Upload the codes to Amazon.com account
 Probably learn Amazon API and do yourself
 
+TODO: Test if the notification system works, cuz the setInterval thing is sketchy. 
+			- simulate the process using your own channel and upload a video.
+				- see if the program can detect that. 
 
