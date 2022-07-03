@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node run-api.js && bash ./batch-image-text-extractor.sh && rm -Rf jpg && find ./txt -type f -size 0 -exec rm -f '{}' + && cat ./txt/*.txt > ./txt/combined.txt && node run-codes.js && node run-amazon.js"
+    "start": "node run-api.js && bash ./batch-image-text-extractor.sh && rm -Rf jpg && find ./txt -type f -size 0 -exec rm -f '{}' + && cat ./txt/*.txt > ./txt/combined.txt && node run-codes.js && node run-amazon.js && rm -Rf txt && rm video.mp4"
   },
   "author": "Andrew Vittiglio",
   "license": "MIT",
