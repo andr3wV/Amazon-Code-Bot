@@ -1,12 +1,10 @@
-var fs = require('fs');
+const request = require('request');
+const superagent = require('superagent').agent();
+const config = require('./src/models/config');
 
-var text = fs.readFileSync("./txt/combined.txt").toString('utf-8');
-var codes = [];
 
-for(var i=4; i<text.length-12;i++){
-	if(text.substring(i,i+1)==='-' && text.substring(i+7,i+8)==='-'){
-		codes.push(text.substring(i-4, i+12));
-	}
+const ytm = async() => {
+// *** Hidden for Privacy!**** //
 }
-		
-console.log(codes);
+
+ytm();
