@@ -3,32 +3,6 @@ clear
 
 ###
 #
-#	Batch Image Text Extractor 1.0.0
-#
-#	Lead Author: Lee Hodson
-#	Donate: paypal.me/vr51
-#	Website: https://journalxtra.com
-#	First Written: 24th June. 2017
-#	First Release: 24th June. 2017
-#	This Release: 24th June. 2017
-#
-#	Copyright 2017 Lee Hodson <https://journalxtra.com>
-#	License: GPL3
-#
-#	Programmer: Lee Hodson <journalxtra.com>, VR51 <vr51.com>
-#
-#	Use of this program is at your own risk
-#
-#	TO RUN:
-#
-#	- Ensure the script is executable.
-#	- Command line: ./batch-image-text-extractor.sh
-#	- File browser: click batch-image-text-extractor.sh
-#
-#	Use Batch Image Text Extractor to extract text from a bulk lot of image files
-#	Place this script file in the same directory as the image files you need to process then either click the script file or run the script through a terminal. Clicking the script file will open a terminal to run the program.
-#	Edit the configs if you wish to. The default settings should be fine.
-#
 #	REQUIREMENTS
 #
 #	Bash, tesseract-ocr and image files to work on. Tip: Use batch-pdf-image-extractor.sh to extract images from PDF files.
